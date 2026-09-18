@@ -514,6 +514,22 @@ Note that `posts` is also a collection, but it is a default collection created a
 
 You can create new projects by adding new Markdown files in the [\_projects](../_projects/) directory. The easiest way to do this is to copy an existing project and modify it.
 
+Set each project's `date` to its sorting date, `highlight` to `true` to include it in project highlights, and `tagline` to the short overview text shown on project overview cards and highlight rows. The `date` is not displayed in those components. The `tagline` does not populate the project detail page's `page.description` or SEO metadata; set `description` separately if the detail page needs a generic description.
+
+```yaml
+date: 2026-05-01
+highlight: true
+tagline: A short summary shown in project overviews.
+```
+
+To feature highlighted projects on the about page, add `project_highlights: true` to that page's front matter:
+
+```yaml
+project_highlights: true
+```
+
+Projects with `highlight: true` render in descending `date` order using the same bibliography-style presentation as publications. Omit the key or set it to `false` to hide the section.
+
 ## Adding some news
 
 You can add news in the about page by adding new Markdown files in the [\_news](../_news/) directory. There are currently two types of news: inline news and news with a link. News with a link take you to a new page while inline news are displayed directly in the about page. The easiest way to create yours is to copy an existing news and modify it.

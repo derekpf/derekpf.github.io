@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Heuristic-Admissible Hybrid iLQR using Multiple Shooting
-importance: 1
+date: 2025-05-01
+highlight: true
 img: assets/img/publication_preview/heuristic-admissible-hybrid-ilqr.png
-description: Augmenting the standard hybrid iLQR algorithm with multiple shooting enables more informative initial guesses for contact-rich planning.
+tagline: Augmenting the standard hybrid iLQR algorithm with multiple shooting enables more informative initial guesses for contact-rich planning.
 ---

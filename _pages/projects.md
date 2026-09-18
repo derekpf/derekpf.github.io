@@ -16,7 +16,7 @@ _styles: >
 ---
 
 <div class="projects">
-  {% assign sorted_projects = site.projects | sort: "importance" %}
+  {% assign sorted_projects = site.projects | sort: "date" | reverse %}
 
 {% if page.horizontal %}
 
