@@ -1,12 +1,19 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
-title: CV
-nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+title: résumé
+nav: false
+nav_order: 1
+cv_pdf: /assets/pdf/derek_f_resume.pdf
+description: Derek Fan's résumé.
 ---
+
+<iframe
+  src="{{ page.cv_pdf | relative_url }}"
+  title="Derek Fan's résumé"
+  style="width: 100%; height: 80vh; min-height: 600px; border: 0"
+></iframe>
+
+<p>
+  <a href="{{ page.cv_pdf | relative_url }}" target="_blank" rel="noopener noreferrer">Open résumé PDF in a new tab</a>
+</p>

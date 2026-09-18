@@ -1,189 +1,116 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  name: Derek Fan
+  label: Mechanical Engineering Graduate Student
+  email: derekfan.18.2002@gmail.com
+  phone: "+1 (510) 335-5426"
+  location: Pittsburgh, PA
+  website: https://derekpf.github.io
+  summary: Mechanical engineering graduate student working on robot learning, motion planning, control, and optimization.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: derekpf
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: derek-fan-uci
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: Carnegie Mellon University
+        location: Pittsburgh, PA
+        area: Mechanical Engineering
+        studyType: Master of Science
+        start_date: "2024-08"
+        end_date: "2026-12"
+        score: "3.9 GPA"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: University of California, Irvine
+        location: Irvine, CA
+        area: Mechanical Engineering
+        studyType: Bachelor of Science
+        start_date: "2020-09"
+        end_date: "2024-06"
+        score: "3.6 GPA"
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Audi of America, Audi Automated Driving Development
+        position: Motion Planning & Controls Intern
+        location: San Jose, CA
+        start_date: "2025-08"
+        end_date: "2026-01"
         highlights:
-          - Relativity
-          - Description 2.
+          - "Implemented CUDA-based sampling-based model predictive control (MPC) and deployed on real vehicle test drives."
+          - "Augmented sampling-based MPC with multi-threaded control action scheduling for more consistent control signals."
+          - "Designed a novel MPPI algorithm for sampling in low-frequency space for smooth and performant trajectory planning."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Near Earth Autonomy
+        position: Robotics Intern
+        location: Pittsburgh, PA
+        start_date: "2025-05"
+        end_date: "2025-08"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Designed a hybrid sampling and gradient-based trajectory optimizer for helicopter route planning over terrain."
+          - "Developed a fast and optimal sampling-based path planner for coarse initial paths around complex terrain."
+          - "Implemented a novel trajectory optimizer with terrain constraints by differentiably interpolating elevation grids."
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Johnson & Johnson MedTech
+        position: Robotics & Controls Intern
+        location: Santa Clara, CA
+        start_date: "2024-06"
+        end_date: "2024-08"
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Designed, implemented, and tested collision avoidance planning on the surgeon-side robot for future software releases."
+          - "Investigated various motor control mode features for more ergonomic surgeon-side trajectory planning and control."
+          - "Resolved quality-of-life issues and tickets, including a critical fix to the robot's motor encoder verification routine."
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - company: Johnson & Johnson MedTech
+        position: Systems Integration Engineering Intern
+        location: Santa Clara, CA
+        start_date: "2023-06"
+        end_date: "2023-09"
+        highlights:
+          - "Built and deployed a CAN analysis Python tool to allow engineers to interpret and log CAN frames during tests."
+          - "Designed and tested a weighted fixture for robot arm verification, formalizing a new and necessary acceptance test."
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: Robot Learning with Differentiable Contact Simulation
+        position: Graduate Student Researcher
+        location: Pittsburgh, PA
+        start_date: "2024-08"
+        end_date: present
+        highlights:
+          - "Working on high-throughput sample-efficient reinforcement learning for locomotion and manipulation using differentiable contact simulation."
+          - "Researching first-order reinforcement learning and generative behavior cloning methods for more compliant torque-based controllers."
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+      - company: Fast Uncertainty Quantification for Model-Based Reinforcement Learning
+        position: Graduate Student Researcher
+        location: Pittsburgh, PA
+        start_date: "2026-04"
+        end_date: present
+        highlights:
+          - "Designed a novel architecture for training categorical latent world models using evidential deep learning (EDL)."
+          - "Incorporated evidential regression-based uncertainty quantification into the actor-critic MPC planning objective."
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+      - company: Spacecraft Design-Build-Fly Student Team
+        position: GNC Engineer
+        location: Pittsburgh, PA
+        start_date: "2024-08"
+        end_date: "2025-04"
+        highlights:
+          - "Spearheaded attitude control and orbit determination design efforts for a Low Earth Orbit CubeSat mission."
+          - "Implemented spin stabilization and pointing controllers for flight software and Monte Carlo analysis."
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - company: Adaptive Optimal UAV Control Research
+        position: Undergraduate Student Researcher
+        location: Irvine, CA
+        start_date: "2023-05"
+        end_date: "2024-11"
+        highlights:
+          - 'Published in IEEE SusTech 2025: "Efficient Estimation of Relaxed Model Parameters for Robust UAV Trajectory Optimization" (https://ieeexplore.ieee.org/document/11025659).'
+          - "Derived novel simplified quadrotor dynamics and leveraged efficient optimization solvers to achieve fast adaptive MPC."
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Languages
+        keywords: "C++, Python, Julia, Matlab"
+      - name: Tools
+        keywords: "ROS, ROS2, MuJoCo, Isaac Sim, JAX, PyTorch, CUDA"
+      - name: Methods
+        keywords: "Reinforcement Learning, Behavior Cloning, Motion Planning, Trajectory Optimization, Provably Safe Control"

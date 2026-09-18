@@ -3,6 +3,7 @@ _site
 .DS_store
 .idea
 .jekyll-cache
+.jekyll-preview/
 .jekyll-metadata
 .ruby-version
 .sass-cache
