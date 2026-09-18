@@ -66,6 +66,7 @@ Do not add duplicate component-level correctness tests to this starter when the 
 Before opening/updating a PR in `v1.x`, run:
 
 ```bash
+git submodule update --init --recursive
 bundle install
 npm ci
 npm run lint:prettier

@@ -1,0 +1,6 @@
+[submodule "extern/al-folio-cv"]
+	path = extern/al-folio-cv
+	url = https://github.com/derekpf/al-folio-cv.git
+[submodule "extern/al-folio-core"]
+	path = extern/al-folio-core
+	url = https://github.com/derekpf/al-folio-core.git

@@ -48,6 +48,7 @@ jobs:
           # a tag, which would leave a detached HEAD and make the push below
           # fail with "not currently on a branch".
           ref: ${{ github.event.repository.default_branch }}
+          submodules: recursive
 
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1

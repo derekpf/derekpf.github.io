@@ -63,7 +63,13 @@ Starting version [v0.3.5](https://github.com/alshedivat/al-folio/releases/tag/v0
 Once everything is deployed, you can download the repository to your machine and start customizing it locally:
 
 ```bash
-git clone git@github.com:<your-username>/<your-repo-name>.git
+git clone --recurse-submodules git@github.com:<your-username>/<your-repo-name>.git
+```
+
+If you already cloned the repository without its plugin submodules, initialize them before installing Ruby dependencies:
+
+```bash
+git submodule update --init --recursive
 ```
 
 See [Local setup using Docker](#local-setup-using-docker-recommended) or other sections below for local development options.

@@ -9,6 +9,8 @@ on:
     paths:
       - "Gemfile"
       - "Gemfile.lock"
+      - ".gitmodules"
+      - "extern/**"
       - "_config.yml"
       - "_data/**"
       - "_pages/**"
@@ -27,6 +29,8 @@ on:
     paths:
       - "Gemfile"
       - "Gemfile.lock"
+      - ".gitmodules"
+      - "extern/**"
       - "_config.yml"
       - "_data/**"
       - "_pages/**"
@@ -44,6 +48,8 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1

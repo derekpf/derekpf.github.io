@@ -40,10 +40,10 @@ end
 
 # Gems for al-folio plugins
 group :al_folio_plugins do
-    # Temporary immutable pin until the amended 1.0.16 release is published.
-    gem 'al_folio_core', '= 1.0.16', git: 'https://github.com/derekpf/al-folio-core.git', ref: '9afe5ceb8161f5da47c0d9d38f5e12f670d32dc8'
+    # Customized runtime gems are pinned by the commits recorded in extern/.
+    gem 'al_folio_core', '= 1.0.16', path: 'extern/al-folio-core'
     gem 'al_icons', '= 1.0.0'
-    gem 'al_folio_cv', '= 1.0.2'
+    gem 'al_folio_cv', '= 1.0.2', path: 'extern/al-folio-cv'
     gem 'al_folio_distill', '= 1.0.3'
     gem 'al_folio_upgrade', '= 1.0.3'
     gem 'al_folio_bootstrap_compat', '= 1.0.0'

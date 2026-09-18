@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
 selected_papers: true # includes a list of papers marked as "selected={true}"
 project_highlights: true # includes projects marked as "highlight: true", newest first by date
+cv: true # loads the CV styles used by the previous-role renderer
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -23,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a second-year M.S. student and I've worked on various levels of the robot control stack, ranging from low-level motor drivers to high-level planning and policy training. My experience spans deep/reinforcement learning, trajectory optimization, CUDA programming, and performant C++ control code across quadrupeds, drones, self-driving cars, and surgical robots.
+I've worked at each level of the robot control stack, ranging from low-level motor drivers to high-level planning and policy training. My experience spans deep/reinforcement learning, trajectory optimization, CUDA programming, and performant C++ control code across quadrupeds, drones, self-driving cars, and surgical robots.
 
-I'm advised by [Prof. Aaron Johnson](https://www.meche.engineering.cmu.edu/directory/bios/johnson-aaron.html) in the [Robomechanics Lab](https://www.cmu.edu/me/robomechanicslab/). I'm currently pursuing research in locomotion/manipulation reinforcement learning using differentiable simulation, imitation learning for high-performance torque policies, and uncertainty quantification for world models.
+I'm advised by [Prof. Aaron Johnson](https://www.meche.engineering.cmu.edu/directory/bios/johnson-aaron.html) in the [Robomechanics Lab](https://www.cmu.edu/me/robomechanicslab/). I'm currently pursuing research in reinforcement learning for locomotion and manipulation using differentiable simulation, imitation learning for high-performance torque policies, and uncertainty quantification for world models.

@@ -146,15 +146,15 @@ Migrate content off Bootstrap markup before then. See [FAQ](FAQ.md#how-do-i-hand
 
 ## Working on a gem alongside the starter
 
-Plugin gems are developed as sibling checkouts next to this repo. Clone the gem repo beside your `al-folio` checkout, then point the `Gemfile` at your working copy and reinstall:
-
-```ruby
-gem "al_folio_core", path: "../al-folio-core"     # or git: / branch:
-```
+The customized core and CV plugin sources used by this site are tracked as submodules under `extern/`. Initialize them after cloning, then Bundler resolves the checked-out sources directly:
 
 ```bash
+git submodule update --init --recursive
 bundle install
 bundle exec jekyll build --baseurl /al-folio
 ```
 
-Revert the `Gemfile` to the pinned released version before committing — the pins in `Gemfile` are starter wiring and `test/style_contract.js` asserts some of them.
+```ruby
+gem "al_folio_core", path: "extern/al-folio-core"
+gem "al_folio_cv", path: "extern/al-folio-cv"
+```

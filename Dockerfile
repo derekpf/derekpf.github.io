@@ -56,6 +56,8 @@ RUN mkdir /srv/jekyll
 # copy the Gemfile and Gemfile.lock to the image
 ADD Gemfile.lock /srv/jekyll
 ADD Gemfile /srv/jekyll
+COPY extern/al-folio-core /srv/jekyll/extern/al-folio-core
+COPY extern/al-folio-cv /srv/jekyll/extern/al-folio-cv
 
 # set the working directory
 WORKDIR /srv/jekyll

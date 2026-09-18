@@ -6,12 +6,17 @@ GIT
       jekyll (>= 0.10.0)
       terser (>= 1.0.0)
 
-GIT
-  remote: https://github.com/derekpf/al-folio-core.git
-  revision: 9afe5ceb8161f5da47c0d9d38f5e12f670d32dc8
-  ref: 9afe5ceb8161f5da47c0d9d38f5e12f670d32dc8
+PATH
+  remote: extern/al-folio-core
   specs:
     al_folio_core (1.0.16)
+      jekyll (>= 3.9, < 5.0)
+      liquid (>= 4.0, < 6.0)
+
+PATH
+  remote: extern/al-folio-cv
+  specs:
+    al_folio_cv (1.0.2)
       jekyll (>= 3.9, < 5.0)
       liquid (>= 4.0, < 6.0)
 
@@ -57,9 +62,6 @@ GEM
       jekyll (>= 3.9, < 5.0)
       nokogiri (>= 1.13, < 2.0)
     al_folio_bootstrap_compat (1.0.0)
-      jekyll (>= 3.9, < 5.0)
-      liquid (>= 4.0, < 6.0)
-    al_folio_cv (1.0.2)
       jekyll (>= 3.9, < 5.0)
       liquid (>= 4.0, < 6.0)
     al_folio_distill (1.0.3)
@@ -369,7 +371,7 @@ DEPENDENCIES
   al_ext_posts (= 1.0.3)
   al_folio_bootstrap_compat (= 1.0.0)
   al_folio_core (= 1.0.16)!
-  al_folio_cv (= 1.0.2)
+  al_folio_cv (= 1.0.2)!
   al_folio_distill (= 1.0.3)
   al_folio_upgrade (= 1.0.3)
   al_icons (= 1.0.0)
@@ -417,7 +419,7 @@ CHECKSUMS
   al_ext_posts (1.0.3) sha256=c4956d36071958d30de14f6c368863d3e4190dfe312dba08ff79aa685292420d
   al_folio_bootstrap_compat (1.0.0) sha256=c210ff3087f17344dc864fa9594c737e947b23c6cae9fab3dbd37a87090b98a8
   al_folio_core (1.0.16)
-  al_folio_cv (1.0.2) sha256=d9b8d3624c0c707a04deaa41972fa88395fa164419bccc44e2dc2488400022fa
+  al_folio_cv (1.0.2)
   al_folio_distill (1.0.3) sha256=3feb669dd669effec127e1be5385158c5f98062c510980b5c9c802227ec2c247
   al_folio_upgrade (1.0.3) sha256=434ffddb27705852eae0bcaa01a8d007e0ef65472a989d1a33ae759f910f4709
   al_icons (1.0.0) sha256=7a7b6428d18e77b039aa1ae765a3faed0ae27cb646a08c1009b145c31ca5ef2d
