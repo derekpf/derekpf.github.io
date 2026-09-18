@@ -15,6 +15,15 @@ bundle exec jekyll build -d "${site_no_compat}" >/dev/null
 
 index_no_compat="${site_no_compat}/index.html"
 grep -q '/assets/css/tailwind.css' "${index_no_compat}"
+
+for runtime in theme.js nav-toggle.js masonry.js tooltips-setup.js no_defer.js copy_code.js common.js jupyter_new_tab.js progress-bar.js; do
+  grep -q "/assets/js/${runtime}" "${index_no_compat}"
+  [ -f "${site_no_compat}/assets/js/${runtime}" ] || {
+    echo "core runtime asset missing from default build: ${runtime}" >&2
+    exit 1
+  }
+done
+
 if grep -q '/assets/css/bootstrap-compat.css' "${index_no_compat}"; then
   echo "unexpected bootstrap compatibility stylesheet in default build" >&2
   exit 1
