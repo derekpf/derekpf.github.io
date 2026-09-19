@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Covers al_rtl, al_marimo and al_email_protect: each renders when its gate is
-# on, and renders nothing when it is off.
+# on, and renders nothing when it is off. Email protection is enabled in the
+# site's default configuration; the test supplies an override for the off case.
 #
 # The "off" half is the point. All three are two-layer gated, so a regression
 # does not raise an error — the Liquid tag just returns an empty string and the
@@ -69,13 +70,6 @@ grep -q 'al_marimo' "${default_site}/index.html" && fail "home page wrongly load
 
 # --- al_email_protect -------------------------------------------------------
 
-# Off by default, so this builds with an override rather than changing the
-# shipped config: turning it on for the demo site would flip the default for
-# everyone who copies this template.
-override="${tmp_dir}/protect-email.yml"
-printf 'protect_email: true\n' >"${override}"
-protected_site="$(build protected --config "_config.yml,${override}")"
-
 # Scope note: this asserts the gating and the runtime, NOT that site-wide
 # addresses are obfuscated. `al_folio_core`'s metadata.liquid renders social
 # emails itself (`mailto:{{ social[1] | encode_email }}`), so the plugin is not
@@ -83,17 +77,20 @@ protected_site="$(build protected --config "_config.yml,${override}")"
 # core's socials through the plugin needs a change in that gem; until then,
 # asserting "no mailto: anywhere" would be asserting something untrue, and
 # asserting "mailto: still present" would codify the gap as correct.
-grep -q 'assets/al_email_protect/js/email-protect.js' "${protected_site}/index.html" \
+grep -q 'assets/al_email_protect/js/email-protect.js' "${default_site}/index.html" \
   || fail "email-protect runtime not loaded with protect_email on"
-[ -f "${protected_site}/assets/al_email_protect/js/email-protect.js" ] \
+[ -f "${default_site}/assets/al_email_protect/js/email-protect.js" ] \
   || fail "email-protect runtime referenced but not published"
-grep -q 'assets/al_email_protect/css/email-protect.css' "${protected_site}/index.html" \
+grep -q 'assets/al_email_protect/css/email-protect.css' "${default_site}/index.html" \
   || fail "email-protect stylesheet not loaded with protect_email on"
-[ -f "${protected_site}/assets/al_email_protect/css/email-protect.css" ] \
+[ -f "${default_site}/assets/al_email_protect/css/email-protect.css" ] \
   || fail "email-protect stylesheet referenced but not published"
 
-# ...and with it off (the default), the plugin costs nothing.
-grep -q 'al_email_protect' "${default_site}/index.html" \
+# ...and with it off, the plugin costs nothing.
+disabled_override="${tmp_dir}/disable-email-protect.yml"
+printf 'protect_email: false\n' >"${disabled_override}"
+unprotected_site="$(build unprotected --config "_config.yml,${disabled_override}")"
+grep -q 'al_email_protect' "${unprotected_site}/index.html" \
   && fail "email-protect assets loaded while disabled"
 
 echo "new plugin integration checks passed"
