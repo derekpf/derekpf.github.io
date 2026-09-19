@@ -3,7 +3,7 @@ ul.experience-list{padding-left:0;list-style:none}span.experience-date{position:
 p.experience-location{display:block}
 p.experience-location .location-line{display:inline}
 div.experience-location-border{width:100%;max-width:100%;padding-left:0;padding-right:0}
-div.experience-location-border{padding-top:.25rem;padding-bottom:.25rem}
+div.experience-location-border{padding-top:.25rem;padding-bottom:.375rem}
 div.experience-location-border table.experience-location-table{width:100%;table-layout:fixed;top:0}
 div.experience-location-border table.experience-location-table td{padding-left:0;padding-right:0;border:0}
 div.experience-location-border .experience-date{display:block;width:100%;min-width:0!important;max-width:100%;white-space:normal;overflow-wrap:anywhere}
@@ -15,8 +15,9 @@ div.experience-location-border:hover .experience-location-text,div.experience-lo
 em.experience-company-name{opacity:1}
 div.cv ul.experience-list>li.list-group-item+li.list-group-item{margin-top:22.5px}
 h6.experience-role,h6.experience-company{font-size:1.0555556rem}
-h6.experience-role{margin-bottom:calc(.25rem / 1.5)}
+h6.experience-role{margin-bottom:0}
 div.experience-details .experience-company.description-title{font-weight:400!important}
-div.experience-details>.description-border{width:100%;max-width:100%}
+div.experience-details>.description-border{width:fit-content;max-width:100%}
 @media (min-width:576px){div.cv ul.experience-list>li.list-group-item+li.list-group-item{margin-top:26.5px}}
 div.experience-location-border .experience-date,div.experience-location-border p.experience-location{line-height:1}
+h2.previous-role-heading{margin-bottom:22.5px}
