@@ -18,6 +18,19 @@ for (const forbiddenScript of ["build:css", "build:tailwind", "build:tailwind:wa
 }
 
 const config = read("_config.yml");
+const aboutPage = read("_pages/about.md");
+const homeRedirect = read("index.html");
+if (!/^permalink:\s*\/about\/$/m.test(aboutPage)) {
+  failures.push("The about page must publish at /about/.");
+}
+if (
+  !/^permalink:\s*\/$/m.test(homeRedirect) ||
+  !homeRedirect.includes('http-equiv="refresh"') ||
+  !homeRedirect.includes("'/about/' | relative_url")
+) {
+  failures.push("The root index must redirect to /about/.");
+}
+
 if (!/^\s*theme:\s*al_folio_core\s*$/m.test(config)) {
   failures.push("`_config.yml` must keep `theme: al_folio_core` for thin-starter wiring.");
 }

@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /about/
 subtitle: <strong">M.S. in Mechanical Engineering • Carnegie Mellon</strong>
 
 profile:

@@ -38,9 +38,9 @@ cv:
         start_date: "2025-08"
         end_date: "2026-01"
         highlights:
-          - "Implemented CUDA-based sampling-based MPC and deployed in vehicle tests."
-          - "Augmented sampling-based MPC with multi-threaded scheduling for consistent control."
-          - "Designed an MPPI algorithm sampling low-frequency space for smooth path planning."
+          - "Implemented sampling-based model predictive control (MPC) with CUDA and deployed on test drives."
+          - "Augmented MPC with multi-threaded control action scheduling for more consistent control signals."
+          - "Designed a novel MPPI algorithm for sampling in low-frequency space for safer planning."
 
       - company: Near Earth Autonomy
         position: Robotics Intern
