@@ -38,9 +38,9 @@ cv:
         start_date: "2025-08"
         end_date: "2026-01"
         highlights:
-          - "Implemented CUDA-based sampling-based model predictive control (MPC) and deployed on real vehicle test drives."
-          - "Augmented sampling-based MPC with multi-threaded control action scheduling for more consistent control signals."
-          - "Designed a novel MPPI algorithm for sampling in low-frequency space for smooth and performant trajectory planning."
+          - "Implemented CUDA-based sampling-based MPC and deployed in vehicle tests."
+          - "Augmented sampling-based MPC with multi-threaded scheduling for consistent control."
+          - "Designed an MPPI algorithm sampling low-frequency space for smooth path planning."
 
       - company: Near Earth Autonomy
         position: Robotics Intern
@@ -48,9 +48,9 @@ cv:
         start_date: "2025-05"
         end_date: "2025-08"
         highlights:
-          - "Designed a hybrid sampling and gradient-based trajectory optimizer for helicopter route planning over terrain."
-          - "Developed a fast and optimal sampling-based path planner for coarse initial paths around complex terrain."
-          - "Implemented a novel trajectory optimizer with terrain constraints by differentiably interpolating elevation grids."
+          - "Designed a hybrid sampling and gradient-based optimizer for helicopter routing over terrain."
+          - "Developed a fast, optimal sampling-based planner for coarse paths around complex terrain."
+          - "Implemented a novel optimizer with terrain constraints via differentiable elevation-grid interpolation."
 
       - company: Johnson & Johnson MedTech
         position: Robotics & Controls Intern
@@ -58,9 +58,9 @@ cv:
         start_date: "2024-06"
         end_date: "2024-08"
         highlights:
-          - "Designed, implemented, and tested collision avoidance planning on the surgeon-side robot for future software releases."
-          - "Investigated various motor control mode features for more ergonomic surgeon-side trajectory planning and control."
-          - "Resolved quality-of-life issues and tickets, including a critical fix to the robot's motor encoder verification routine."
+          - "Designed, implemented, and tested surgeon-side robot collision avoidance for future releases."
+          - "Investigated motor control modes for ergonomic surgeon-side trajectory planning and control."
+          - "Resolved quality-of-life issues, including a critical fix to the robot's motor encoder verification routine."
 
       - company: Johnson & Johnson MedTech
         position: Systems Integration Engineering Intern
@@ -68,8 +68,8 @@ cv:
         start_date: "2023-06"
         end_date: "2023-09"
         highlights:
-          - "Built and deployed a CAN analysis Python tool to allow engineers to interpret and log CAN frames during tests."
-          - "Designed and tested a weighted fixture for robot arm verification, formalizing a new and necessary acceptance test."
+          - "Built and deployed a Python CAN analysis tool for interpreting and logging CAN frames during tests."
+          - "Designed and tested fixtures for robot arm verification, formalizing a necessary acceptance test."
 
       - company: Robot Learning with Differentiable Contact Simulation
         position: Graduate Student Researcher
@@ -77,8 +77,8 @@ cv:
         start_date: "2024-08"
         end_date: present
         highlights:
-          - "Working on high-throughput sample-efficient reinforcement learning for locomotion and manipulation using differentiable contact simulation."
-          - "Researching first-order reinforcement learning and generative behavior cloning methods for more compliant torque-based controllers."
+          - "Developing high-throughput sample-efficient reinforcement learning for locomotion/manipulation using differentiable contact simulation."
+          - "Researching first-order reinforcement learning and generative behavior cloning for compliant torque-based controllers."
 
       - company: Fast Uncertainty Quantification for Model-Based Reinforcement Learning
         position: Graduate Student Researcher
@@ -86,8 +86,8 @@ cv:
         start_date: "2026-04"
         end_date: present
         highlights:
-          - "Designed a novel architecture for training categorical latent world models using evidential deep learning (EDL)."
-          - "Incorporated evidential regression-based uncertainty quantification into the actor-critic MPC planning objective."
+          - "Designed a novel categorical latent world model architecture using evidential deep learning (EDL)."
+          - "Incorporated evidential regression-based uncertainty quantification into actor-critic MPC objective."
 
       - company: Spacecraft Design-Build-Fly Student Team
         position: GNC Engineer
@@ -95,8 +95,8 @@ cv:
         start_date: "2024-08"
         end_date: "2025-04"
         highlights:
-          - "Spearheaded attitude control and orbit determination design efforts for a Low Earth Orbit CubeSat mission."
-          - "Implemented spin stabilization and pointing controllers for flight software and Monte Carlo analysis."
+          - "Spearheaded attitude control and orbit determination for a Low Earth Orbit CubeSat mission."
+          - "Implemented spin-stabilization and pointing controllers for flight software and Monte Carlo."
 
       - company: Adaptive Optimal UAV Control Research
         position: Undergraduate Student Researcher
@@ -104,8 +104,8 @@ cv:
         start_date: "2023-05"
         end_date: "2024-11"
         highlights:
-          - 'Published in IEEE SusTech 2025: "Efficient Estimation of Relaxed Model Parameters for Robust UAV Trajectory Optimization" (https://ieeexplore.ieee.org/document/11025659).'
-          - "Derived novel simplified quadrotor dynamics and leveraged efficient optimization solvers to achieve fast adaptive MPC."
+          - 'IEEE SusTech 2025: "Efficient Estimation of Relaxed Model Parameters for Robust UAV Trajectory Optimization" (https://ieeexplore.ieee.org/document/11025659).'
+          - "Derived simplified quadrotor dynamics and leveraged efficient solvers to achieve fast adaptive MPC."
 
     Skills:
       - name: Languages

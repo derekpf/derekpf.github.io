@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Carnegie Mellon University • M.S. Mechanical Engineering<br><strong">Robot learning. Motion planning. Control.</strong>
+subtitle: <strong">M.S. in Mechanical Engineering • Carnegie Mellon</strong>
 
 profile:
   align: right
@@ -11,7 +11,7 @@ profile:
 selected_papers: true # includes a list of papers marked as "selected={true}"
 project_highlights: true # includes projects marked as "highlight: true", newest first by date
 cv: true # loads the CV styles used by the previous-role renderer
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I've worked at each level of the robot control stack, ranging from low-level motor drivers to high-level planning and policy training. My experience spans deep/reinforcement learning, trajectory optimization, CUDA programming, and performant C++ control code across quadrupeds, drones, self-driving cars, and surgical robots.
+I've worked at each level of the robot control stack, ranging from low-level motor drivers to high-level planning and policy training. My experience spans deep/reinforcement learning, trajectory optimization, CUDA programming, and performant C++ control code across quadrupeds, self-driving cars, surgical robots, and drones.
 
-I'm advised by [Prof. Aaron Johnson](https://www.meche.engineering.cmu.edu/directory/bios/johnson-aaron.html) in the [Robomechanics Lab](https://www.cmu.edu/me/robomechanicslab/). I'm currently pursuing research in reinforcement learning for locomotion and manipulation using differentiable simulation, imitation learning for high-performance torque policies, and uncertainty quantification for world models.
+I'm advised by [Prof. Aaron Johnson](https://www.meche.engineering.cmu.edu/directory/bios/johnson-aaron.html) in the [Robomechanics Lab](https://www.cmu.edu/me/robomechanicslab/). Right now, I'm researching differential-sim-based reinforcement learning for locomotion and manipulation, imitation learning for high-performance torque policies, and uncertainty quantification for world models.
