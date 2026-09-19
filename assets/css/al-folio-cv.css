@@ -13,8 +13,10 @@ div.experience-location-border .experience-location-text{transition:color .2s ea
 div.experience-location-border:hover .experience-location-text,div.experience-location-border:focus-within .experience-location-text{color:var(--global-hover-color)}
 @media (prefers-reduced-motion:reduce){div.experience-location-border .experience-location-text{transition:none}html.transition div.experience-location-border .experience-location-text{transition:none!important}}
 em.experience-company-name{opacity:1}
-div.cv ul.experience-list>li.list-group-item+li.list-group-item{margin-top:3rem}
+div.cv ul.experience-list>li.list-group-item+li.list-group-item{margin-top:22.5px}
 h6.experience-role,h6.experience-company{font-size:1.0555556rem}
 h6.experience-role{margin-bottom:calc(.25rem / 1.5)}
 div.experience-details .experience-company.description-title{font-weight:400!important}
 div.experience-details>.description-border{width:100%;max-width:100%}
+@media (min-width:576px){div.cv ul.experience-list>li.list-group-item+li.list-group-item{margin-top:26.5px}}
+div.experience-location-border .experience-date,div.experience-location-border p.experience-location{line-height:1}
