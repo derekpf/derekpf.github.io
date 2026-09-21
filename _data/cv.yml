@@ -38,7 +38,7 @@ cv:
         start_date: "2025-08"
         end_date: "2026-01"
         highlights:
-          - "Implemented sampling-based model predictive control (MPC) with CUDA and deployed on test drives."
+          - "Implemented sampling-based MPC using CUDA and deployed on vehicle test drives."
           - "Augmented MPC with multi-threaded control action scheduling for more consistent control signals."
           - "Designed a novel MPPI algorithm for sampling in low-frequency space for safer planning."
 
