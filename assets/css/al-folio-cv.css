@@ -17,7 +17,7 @@ div.cv ul.experience-list>li.list-group-item+li.list-group-item{margin-top:22.5p
 h6.experience-role,h6.experience-company{font-size:1.0555556rem}
 h6.experience-role{margin-bottom:0}
 div.experience-details .experience-company.description-title{font-weight:400!important}
-div.experience-details>.description-border{width:fit-content;max-width:100%}
+div.experience-details>.description-border{width:100%;max-width:100%}
 @media (min-width:576px){div.cv ul.experience-list>li.list-group-item+li.list-group-item{margin-top:26.5px}}
 div.experience-location-border .experience-date,div.experience-location-border p.experience-location{line-height:1}
 h2.previous-role-heading{margin-bottom:22.5px}
