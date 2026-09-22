@@ -11,7 +11,7 @@ cv:
     - network: GitHub
       username: derekpf
     - network: LinkedIn
-      username: derek-fan-uci
+      username: derekpf
 
   sections:
     Education:
@@ -38,9 +38,9 @@ cv:
         start_date: "2025-08"
         end_date: "2026-01"
         highlights:
-          - "Implemented sampling-based MPC using CUDA and deployed on vehicle test drives."
-          - "Augmented MPC with multi-threaded control action scheduling for more consistent control signals."
-          - "Designed a novel MPPI algorithm for sampling in low-frequency space for safer planning."
+          - "Implemented sampling-based MPC using CUDA and deployed on test drives."
+          - "Added multi-threaded action scheduling for more consistent control signals."
+          - "Designed a novel low-frequency MPPI algorithm for smoother, safer planning."
 
       - company: Near Earth Autonomy
         position: Robotics Intern
@@ -48,9 +48,9 @@ cv:
         start_date: "2025-05"
         end_date: "2025-08"
         highlights:
-          - "Designed a hybrid sampling and gradient-based optimizer for helicopter routing over terrain."
-          - "Developed a fast, optimal sampling-based planner for coarse paths around complex terrain."
-          - "Implemented a novel optimizer with terrain constraints via differentiable elevation-grid interpolation."
+          - "Designed a hybrid sampling/gradient helicopter planner for complex terrain."
+          - "Implemented a sampling-based planner for coarse paths over terrain features."
+          - "Developed a novel trajectory optimizer for terrain via smooth interpolation."
 
       - company: Johnson & Johnson MedTech
         position: Robotics & Controls Intern
@@ -58,9 +58,9 @@ cv:
         start_date: "2024-06"
         end_date: "2024-08"
         highlights:
-          - "Designed, implemented, and tested surgeon-side robot collision avoidance for future releases."
-          - "Investigated motor control modes for ergonomic surgeon-side trajectory planning and control."
-          - "Resolved quality-of-life issues, including a critical fix to the robot's motor encoder verification routine."
+          - "Designed, implemented, and tested surgeon-side robot collision avoidance."
+          - "Investigated motor control modes for surgeon-side planning and control."
+          - "Resolved a critical fix to the robot's motor encoder verification routine."
 
       - company: Johnson & Johnson MedTech
         position: Systems Integration Engineering Intern
@@ -68,8 +68,8 @@ cv:
         start_date: "2023-06"
         end_date: "2023-09"
         highlights:
-          - "Built and deployed a Python CAN analysis tool for interpreting and logging CAN frames during tests."
-          - "Designed and tested fixtures for robot arm verification, formalizing a necessary acceptance test."
+          - "Built and deployed a Python CAN analysis tool for robotic surgery tests."
+          - "Designed and tested fixtures for a necessary robot arm verification test."
 
       - company: Robot Learning with Differentiable Contact Simulation
         position: Graduate Student Researcher
