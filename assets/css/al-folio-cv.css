@@ -8,7 +8,7 @@ div.experience-location-border table.experience-location-table{width:100%;table-
 div.experience-location-border table.experience-location-table td{padding-left:0;padding-right:0;border:0}
 div.experience-location-border .experience-date{display:block;width:100%;min-width:0!important;max-width:100%;white-space:normal;overflow-wrap:anywhere}
 div.experience-location-border p.experience-location{top:0;margin:0;white-space:normal;overflow-wrap:anywhere}
-@media (min-width:576px){div.experience-details{flex:0 0 83.333333%;max-width:83.333333%}}
+@media (min-width:576px){div.experience-details{flex:0 0 66.6667%;max-width:66.6667%}}
 div.experience-location-border .experience-location-text{transition:color .2s ease}
 div.experience-location-border:hover .experience-location-text,div.experience-location-border:focus-within .experience-location-text{color:var(--global-hover-color)}
 @media (prefers-reduced-motion:reduce){div.experience-location-border .experience-location-text{transition:none}html.transition div.experience-location-border .experience-location-text{transition:none!important}}
