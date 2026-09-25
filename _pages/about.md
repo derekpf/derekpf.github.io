@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /about/
+leap_hand_cube: true
 subtitle: <strong">M.S. in Mechanical Engineering • Carnegie Mellon University</strong>
 
 profile:
