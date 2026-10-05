@@ -11,6 +11,8 @@
  */
 
 const progressBar = document.getElementById("progress");
+const aboutHero = document.getElementById("about-hero");
+let navbarHeight = 0;
 
 window.addEventListener("load", () => {
   setTimeout(progressBarSetup, 50);
@@ -23,6 +25,7 @@ function progressBarSetup() {
     initializeProgressElement();
     document.addEventListener("scroll", () => {
       progressBar.value = getCurrentScrollPosition();
+      placeProgressBar();
     });
     window.addEventListener("resize", initializeProgressElement);
   } else {
@@ -46,12 +49,22 @@ function getElementOuterHeightWithMargins(element) {
 
 function initializeProgressElement() {
   const navbar = document.getElementById("navbar");
-  const navbarHeight = Math.round(getElementOuterHeightWithMargins(navbar));
+  navbarHeight = Math.round(getElementOuterHeightWithMargins(navbar));
 
-  document.body.style.paddingTop = `${navbarHeight}px`;
-  progressBar.style.top = `${navbarHeight}px`;
+  // The about hero reserves its own (taller) space under the navbar in CSS.
+  if (!document.body.classList.contains("has-about-hero")) {
+    document.body.style.paddingTop = `${navbarHeight}px`;
+  }
+  placeProgressBar();
   progressBar.max = getDistanceToScroll();
   progressBar.value = getCurrentScrollPosition();
+}
+
+// The bar sits on the bottom border of the header. On the about page that border belongs to
+// the hero band until it scrolls up under the navbar, so follow it until then.
+function placeProgressBar() {
+  const heroBottom = aboutHero ? Math.round(aboutHero.getBoundingClientRect().bottom) : 0;
+  progressBar.style.top = `${Math.max(navbarHeight, heroBottom)}px`;
 }
 
 function getDistanceToScroll() {
