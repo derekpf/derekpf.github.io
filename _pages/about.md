@@ -3,6 +3,21 @@ layout: about
 title: about
 permalink: /about/
 leap_hand_cube: true
+hero_skills: # tags scattered in the header under the section links
+  - robotics
+  - reinforcement learning
+  - manipulation
+  - behavior cloning
+  - PyTorch
+  - controls
+  - CUDA
+  - JAX
+  - Python
+  - locomotion
+  - motion planning
+  - C++
+  - contact modeling
+  - trajectory optimization
 subtitle: <strong">M.S. in Mechanical Engineering • Carnegie Mellon University</strong>
 
 profile:
@@ -27,4 +42,4 @@ latest_posts:
 
 I've worked at every level of the robot control stack, ranging from low-level motor drivers to high-level planning and policy training. My experience spans deep/reinforcement learning, trajectory optimization, CUDA programming, and performant C++ control code across quadrupeds, self-driving cars, surgical robots, and drones.
 
-I'm advised by [Prof. Aaron Johnson](https://www.meche.engineering.cmu.edu/directory/bios/johnson-aaron.html) at the [Robomechanics Lab](https://www.cmu.edu/me/robomechanicslab/). Right now, I'm researching differential-sim-based reinforcement learning for locomotion and manipulation, imitation learning for high-performance torque policies, and uncertainty quantification for world models.
+I'm advised by [Prof. Aaron Johnson](https://www.meche.engineering.cmu.edu/directory/bios/johnson-aaron.html) at the [Robomechanics Lab](https://www.cmu.edu/me/robomechanicslab/). Right now, I'm researching differentiable-sim-based reinforcement learning for locomotion and manipulation, imitation learning for high-performance torque policies, and uncertainty quantification for world models.
